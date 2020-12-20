@@ -111,7 +111,6 @@ Jednakże zachęcamy do wykonania czegoś, co ukaże Twoje wnętrze :)
 Dobrej zabawy!
 
 # CodersCamp 2020 - Projekt HTML & CSS
-=============
 Projekt Wizytówki / Portfolio opracowany wyłącznie na podstawie zagadnień związanych z HTML & CSS, bez użycia JavaScriptu ani żadnego innego frameworka. Nie użyto również gotowych bibliotek styli takich jak Bootstrap.
 
 1. Box Model
@@ -119,6 +118,11 @@ Projekt Wizytówki / Portfolio opracowany wyłącznie na podstawie zagadnień zw
 3. Selektory CSS
 4. Popularne tagi HTML
 5. Jak podpinać CSSa do HTMLa
+
+```html
+<link rel="stylesheet" href="./static/css/style.css">
+```
+
 6. Zapisywanie kolorów
 7. Stylowanie tekstu
 8. Zewnętrzne ikony/fonty (fontawesome, google fonts)
