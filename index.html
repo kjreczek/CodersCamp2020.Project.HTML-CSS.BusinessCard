@@ -1,18 +1,149 @@
 <!DOCTYPE html>
 <html lang="pl">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bree+Serif&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>CodersCamp | Projekt 1 - HTML i CSS</title>
+        <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+        <script src="https://kit.fontawesome.com/ac69056d5c.js" crossorigin="anonymous"></script>
+        <style>
+            .head-style-element {
+                color: goldenrod;
+                text-decoration:underline;
+            }
+        </style>
+    </head>
+    <body>
+        <nav> 
+            <ul class="no-bullets">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact-form">Contact Me</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="header-container">
+                <div class="name">Konrad Reczek</div>
+                <div class="icons">
+                    <i class="fab fa-github-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fas fa-envelope-square"></i>
+                </div>    
+            </div>
+        </header>
+        <main> 
+            <section id="about-me">
+                <h2 class="section-header">About Me</h2>
+                <div class="about-me-container section-body">
+                    <div class="about-me-photo"> <img src="./static/images/img3_ver2.jpg"> </div>
+                    <div class="about-me-name">
+                        Konrad Reczek<br>
+                        junior junior developer
+                    </div>
+                    <div class="about-me-contact">
+                        <i class="far fa-envelope"></i> kj.reczek@gmail.com<br>
+                        <i class="fas fa-phone"></i> (+48) 000 000 000
+                    </div>
+                    <div class="about-me-info"> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="head-style-element">Ut enim ad minim veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+                    </div>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
-    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+                </div>
+            </section>
+            <section id="skills">
+                <h2 class="section-header">Skills</h2>
+                <div class="container-skills section-body">
+                    <h3 class="skills-front-end-header">Front-End</h3>
+                    <div class="skills-front-end-content">
+                        <div class="skills-item">
+                            <span>HTML</span>
+                            <div class="progress"><div class="progress-value progress-4"></div></div>
+                        </div>
+                        <div class="skills-item">
+                            <span>CSS</span>
+                            <div class="progress"><div class="progress-value progress-4"></div></div>
+                        </div>
+                        <div class="skills-item">
+                            <span>Javascript</span>
+                            <div class="progress"><div class="progress-value progress-3"></div></div>
+                        </div>
+                    </div>
+                    <h3 class="skills-graphics-header">Graphics</h3>
+                    <div class="skills-graphics-content">
+                        <div class="skills-item">
+                            <span>Adobe Photoshop</span>
+                            <div class="progress"><div class="progress-value progress-4"></div></div>
+                        </div>
+                        <div class="skills-item">
+                            <span>Adobe Lightroom</span>
+                            <div class="progress"><div class="progress-value progress-2"></div></div>
+                        </div>
+                        <div class="skills-item">
+                            <span>Gimp</span>
+                            <div class="progress"><div class="progress-value progress-4"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="interests">
+                <h2 class="section-header">Interests</h2>
+                <div class="container-interests section-body">
+                    <div class="interests-item" id="interests-book"><p>Books</p></div>
+                    <div class="interests-item" id="interests-plants"><p>Plants</p></div>
+                    <div class="interests-item" id="interests-harry-potter"><p>Harry Potter</p></div>
+                    <div class="interests-item" id="interests-board-game"><p>Board Games</p></div>
+                    <div class="interests-item" id="interests-photography"><p>Photography</p></div>
+                    <div class="interests-item" id="interests-superhero"><p>Superheros</p></div>
+                </div>
+            </section>
+            <section id="contact-form">
+                <h2 class="section-header">Contact Me</h2>
+                <div class="container-contact-form section-body">
+                    <div class="container-contact-item"> 
+                        <p class="contact-title"> FORMULARZ</p>
 
-</head>
+                        <form action="/my_page" method="post">
+                            <div> 
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" name="user_name">
+                            </div>
 
-<body>
+                            <div>
+                                <label for="contact-mail">E-mail</label>
+                                <input type="email" id="contact-mail" name="user_email">
+                            </div>
+                            <div> 
+                                <label for="contact-message">Text</label>
+                                <textarea id="contact-message" name="user_message"></textarea>
+                            </div>
+                            <button type="submit">Send</button>
+                            </form>
+                        </div>
+                    <div class="container-contact-item"><p class="contact-title">Hello!</p> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span style="color: #f45b5b; font-weight:bold;">Duis aute irure dolor</span> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation</strong> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+                </div>
+            
+                </div>
+            </section>
+        </main>
 
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
-
-</body>
+        <footer> 
+            <div class="ball left-ball"></div>
+            <div class="ball right-ball"></div>
+                <table>
+                    <tr>
+                        <td>Copyrights &copy; </td>
+                        <td>2020 Konrad Reczek</td>
+                    </tr>
+                </table>
+        </footer>
+    </body>
 </html>

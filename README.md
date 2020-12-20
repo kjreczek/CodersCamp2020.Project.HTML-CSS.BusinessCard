@@ -1,111 +1,398 @@
 # CodersCamp 2020 - Projekt HTML & CSS
-**CodersCamp (coderscamp.edu.pl) - Największy otwarty kurs programowania webowego** 
+Projekt Wizytówki / Portfolio opracowany wyłącznie na podstawie zagadnień związanych z HTML & CSS, bez użycia JavaScriptu ani żadnego innego frameworka. Nie użyto również gotowych bibliotek styli takich jak Bootstrap.
 
-Gratulacje! 
-Skoro czytacie ten tekst, oznacza to, że dowiedliście swoich umiejętności ze znajomości HTML & CSS. 
-Zostaliście przydzieleni do zespołu, który będzie się uczył programowania i wykonywał prawdziwe aplikacje webowe.
-Teraz stajecie przed pierwszym większym wyzwaniem. 
-Technologie, o których się uczyliście, trzeba zastosować w praktyce.
-To pierwszy i ostatni na CodersCamp projekt, który będziecie robić w pojedynkę.
-Jednakże już macie cały zespół i mentora, który z pewnością będzie Was wspierał.
+### Poniżej przedstawiono przykłady użycia poszczególnych zagadnień HTML & CSS w projekcie.
 
-## Projekt HTML & CSS — Wizytówka / Portfolio
+### 1. Box Model
 
-### Zasady wykonywania projektu (wspólne dla wszystkich grup i mentorów): 
+#### Margin, padding:
 
-##### W projekcie każdy z uczestników powinien zaprezentować praktyczną znajomość poniższych zagadnień związanych z HTML & CSS:
-- Box-model
-- Kaskadowość CSS
-- Selektory CSS
-- Popularne tagi HTML
-- Jak podpinać CSSa do HTMLa
-- Zapisywanie kolorów
-- Stylowanie tekstu
-- Zewnętrzne ikony/fonty (fontawesome, google fonts)
-- Flexbox i/lub CSS Grid
-- Position (absolute, relative)
-- Animacje keyframes
-- Formularz (wysłanie formularza może powodować przeładowanie strony, gdyż w kursie nie było jeszcze jego obsługi)
-- Responsive Web Design
+```
+footer {
+    background-color: var(--background-light);
+    color: var(--font);
+    margin: 20px 0px 0px 0px;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px var(--background-light) solid;
+}
+```
 
-Nie używaj JavaScriptu ani żadnego innego frameworka. 
-Nie używaj też gotowych bibliotek styli takich jak Bootstrap. 
-W trakcie przerabiania działu poznałeś wszystkie umiejętności, które pozwolą Ci wykonać Twoją wizytówkę od podstaw :) 
+### 2. Kaskadowość CSS
 
-##### Sposób oceny projektu (dotyczy tylko projektu pierwszego):
-Zapewne interesuje Was, w jaki sposób projekt zostanie „zaliczony” i oceniony.
-Ocenianie będzie miało kilka etapów.
+style inline są ważniejsze niż style zdefiniowane w znaczniku \<style\> w sekcji head, natomiast w znaczniku head są ważniejsze niż te zdefiniowane w pliku css
 
-- Kiedy skończycie pracę nad projektem, odnotujcie ten fakt w specjalnie przygotowanym formularzu — link otrzymacie od swojego mentora.
-Powinno to nastąpić najpóźniej o godzinie 23:59 dnia poprzedzającego prezentację projektu (data dostępna w harmonogramie kursu).
-- Spotkajcie się w wyznaczonym dniu całym zespołem wraz z mentorem (np. za pomocą Google Meet). W trakcie spotkania zaprezentujcie wykonane przez Was projekty.
-Forma prezentacji pozostaje dowolna (musi zmieścić się w 5 minutach + 5 minut na pytania). 
-Możecie przygotować jakieś slajdy, pokaz waszych talentów, czy nawet zaśpiewać — ale nie jest to konieczne. Na pewno musi zostać pokazana działająca strona internetowa, reszta wg Waszego uznania. 
-Jeśli robicie wizytówkę o sobie, to być może chcecie też opowiedzieć o swoich zainteresowaniach, żeby inni w zespole poznali Was lepiej :) ? 
-- Po prezentacji mentor Waszego zespołu oceni projekt wg kryteriów opisanych w specjalnym arkuszu — przykład takiego arkusza możecie zobaczyć [TUTAJ](https://docs.google.com/spreadsheets/d/1mjCi-oDXILKoCReqJlhGYP4NW-HVMCzvdcIy6ntnsog/edit?usp=sharing). 
-Pamiętajcie też odpowiednio opracować README.md Waszego projektu, tak aby prezentowało kto, co, jak i dlaczego zostało wykonane.
-Zawartość, którą macie tutaj aktualnie (to co teraz czytacie) można usunąć — znajdziecie ją zawsze w oryginalnym repozytorium, które forkowaliście.
-- Po zrecenzowaniu waszych projektów mentor powinien przekazać każdemu jego ocenę punktową i feedback jako uzasadnienie.     
+#### style css o wyższej specyficzności
+```
+ul.no-bullets li a {
+    color: var(--background-light);
+    text-decoration: none; 
+    display: block;
+}
+```
 
 
-### Opis projektu
-Pozyskanie pierwszego klienta nie przychodzi łatwo. 
-Dla klienta, który chce otrzymać produkt wysokiej jakości, nie jest ważna tylko firma, która spróbuje zrealizować jego wizję. 
-Równie istotne jest też to, z jakimi konkretnymi osobami przyjdzie komuś współpracować przy wytwarzaniu oprogramowania.
-Dobrze, żeby Wasi przyszli klienci i wasz zespół trochę lepiej Was poznali.
-Dlatego jako pierwszy projekt do Waszego portfolio proponujemy przygotowanie strony — wizytówki.
-Motywem przewodnim powinniście być właśnie Wy sami lub o wasze zrealizowane projekty lub zainteresowania, najważniejsze umiejętności — nie koniecznie programistycznych! 
-Jesteś fotografem? Możesz przygotować stronę reklamującą swoje usługi. 
-Jako fryzjer czy mechanik, możesz zrobić podobnie. 
-Świat web designu stoi przed Tobą otworem. 
+### 3. Selektory CSS
 
-W tym pierwszym, rozgrzewkowym projekcie pracujecie jeszcze osobno. 
-Pamiętajcie, że macie zespół i mentora, który jest tutaj, żeby Was wspierać przez cały czas trwania kursu. 
+#### all elements
+```
+* {
+    box-sizing: border-box;
+}
+```
+#### root elements
+```
+:root {
+   --background: #dfdfdf;
+   --background-light: #F8F8F8;
+   --font: #323031;
+   --special: #DB3A34;
+}
+```
+#### id
 
-Dajcie się lepiej poznać dzięki internetowi i swoim umiejętnością! :) 
+```
+#skills {
+    background-color: var(--background);
+    color: var(--font);
+}
+```
 
-#### Jak rozpocząć pracę nad projektem
-Aby ułatwić prezentację projektu innym osobom, dobrze, gdyby był on dostępny bez problemów pod adresem strony internetowej.
-W tym przypadku większość pracy z tym związanej zrobiliśmy już za Ciebie. 
-Oto co musisz zrobić, żeby zobaczyć efekt i zacząć development:
+#### class
+```
+.contact-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+}
+```
 
-1. Wykonaj fork tego repozytorium do swojego własnego profilu. 
-Po kliknięciu przycisku pokazanego poniżej GitHub przeniesie Cię automatycznie na Twoją kopię tego repozytorium.
-To tutaj będziesz wykonywać swoją stronę.
-![./.github/images/Project1Prepare1.png](./.github/images/Project1Prepare1.png)
-1. Przejdź do zakładki Settings w Twoim repozytorium.
-![./.github/images/Project1Prepare2.png](./.github/images/Project1Prepare2.png)
-1. Znajdź w zakładce setting sekcję GitHub Pages i wybierz branch *main* jako source (na screenie dawna nazwa głównej gałęzi - master).
-![./.github/images/Project1Prepare3.png](./.github/images/Project1Prepare3.png)
-1. Po wyborze brancha *main*, zatwierdź ustawienia, klikając przycisk `Save`. 
-Wszystko powinno wyglądać tak jak w czerwonym polu poniżej.
-Dzięki temu aktywujesz GitHub Pages dla swojego repozytorium.
-![./.github/images/Project1Prepare4.png](./.github/images/Project1Prepare4.png)
-1. Znajdź sekcję GitHub Pages w zakładce Setting jeszcze raz.
-Teraz powinien znajdować się w tym miejscu link. Po kliknięciu zaprowadzi Cię do Twojej strony.
-Ten link możesz przekazać teraz kolegom z zespołu i mentorowi. 
-Będą mogli dać Ci cenne wskazówki i pomóc z błędami bez pobierania całego repozytorium.
-A Twoja strona jest od razu dostępna w internecie dla każdego, kto chciałby ją odwiedzić. I to kompletnie za darmo!
-![./.github/images/Project1Prepare5.png](./.github/images/Project1Prepare5.png)
-1. Jeśli po kliknięciu w link, pokazała Ci się strona o tej treści, to znaczy, że wszystko jest w porządku.
-![./.github/images/Project1Prepare6.png](./.github/images/Project1Prepare6.png)
+#### element
+```
+footer {
+    background-color: var(--background-light);
+    color: var(--font);
+    margin: 20px 0px 0px 0px;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px var(--background-light) solid;
+}
+```
 
-Od teraz każda zmiana, jaką commitujesz do głównego brancha, będzie się pokazywać pod tym adresem.
-Masz już działające środowisko, więc na co czekasz? Do dzieła!
 
-### Porady odnośnie do projektu
+#### pseudoklasa
+```
+ul.no-bullets li:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+```
 
-#### Interfejs
-Możesz posłużyć się projektem interfejsu strony — wizytówki, wykonanym przez organizatorów projektu. 
-Jest to tylko dla ułatwienia Ci pracy.
-Możesz w trakcie implementacji go dowolnie przekształcać / zmieniać czy zrobić coś zupełnie innego.
-https://www.figma.com/file/WHtiMfcNHt4tc7mDamNBYa/CodersCamp2020-Wizytowka?node-id=0%3A1
-Pamiętaj też, że Twoje rozwiązanie musi być responsywne! 
-Czyli odpowiednio dostosowywać sposób wyświetlania treści do rozmiaru okna przeglądarki.
+#### 
+```
+.container-contact-item:first-child {
+    min-width: 300px;
+    width: 100%;
+}
+```
 
-Inspiracją może być także [DevChallenge.io - Portfolio](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt). 
-Pamiętaj tylko, że Ty korzystasz tutaj jedynie z HTML i CSS.
 
-Przygotowane projekty interfejsu użytkownika są tutaj po to, żebyś bez problemów postawił swoje pierwsze kroki w praktycznym wykorzystaniu HTML i CSS.
-Jednakże zachęcamy do wykonania czegoś, co ukaże Twoje wnętrze :) 
-Dobrej zabawy!
+### 4. Popularne tagi HTML
+
+#### footer, div, table, tr, td
+```html
+<footer> 
+    <div class="ball left-ball"></div>
+    <div class="ball right-ball"></div>
+        <table>
+            <tr>
+                <td>Copyrights &copy; </td>
+                <td>2020 Konrad Reczek</td>
+            </tr>
+        </table>
+</footer>
+```
+
+#### nav, ul, li, a
+```
+<nav> 
+    <ul class="no-bullets">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact-form">Contact Me</a></li>
+    </ul>
+</nav>
+```        
+
+
+### 5. Jak podpinać CSSa do HTMLa
+
+#### Zewnętrzny arkusz CSS
+```html
+<link rel="stylesheet" href="./static/css/style.css">
+```
+
+#### Znaczniki \<style\> w sekcji head
+
+```
+<style>
+    .head-style-element {
+        color: goldenrod;
+        text-decoration:underline;
+    }
+</style>
+```
+
+#### Style inline
+
+```html
+<span style="color: #f45b5b; font-weight:bold;">Duis aute irure dolor</span>
+```
+
+### 6. Zapisywanie kolorów
+
+#### nazwa koloru
+```
+.head-style-element {
+    color: goldenrod;
+    text-decoration:underline;
+}
+```
+#### kod RGB
+```
+input, textarea {
+    background-color: rgb(0, 0, 0, 0.2);
+    border: none;
+    margin: 1px;
+}
+```
+#### kolory zdefiniowane w root
+```
+#contact-form {
+    background-color: var(--background);
+    color: var(--font);
+}
+```
+
+
+### 7. Stylowanie tekstu
+
+#### tytuł sekcji
+```
+.skills-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+```
+#### element listy
+```
+ul.no-bullets li {
+    flex-grow: 1;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.3s linear background-color, font-weight;
+    padding: 8px;
+    cursor: pointer;
+}
+
+ul.no-bullets li a {
+    color: var(--background-light);
+    text-decoration: none; 
+    display: block;
+}
+```
+### 8. Zewnętrzne ikony/fonty (fontawesome, google fonts)
+
+##### Google Fonts
+```html
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bree+Serif&display=swap" rel="stylesheet">
+```
+##### Font Awesome
+```html
+<script src="https://kit.fontawesome.com/ac69056d5c.js" crossorigin="anonymous"></script>
+```
+
+### 9. Flexbox i/lub CSS Grid
+
+#### CSS GRID (sekcja about me)
+```
+.about-me-container {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "about-me-photo"
+        "about-me-name"
+        "about-me-contact"
+        "about-me-info"
+}
+
+.about-me-container {
+    text-align: center;
+}
+
+.about-me-photo {
+    grid-area: about-me-photo;
+}
+
+.about-me-contact {
+    grid-area: about-me-contact;
+}
+
+.about-me-name {
+    grid-area: about-me-name;
+}
+
+.about-me-info {
+    grid-area: about-me-info;
+}
+```
+
+#### flex (sekcja interests)
+```
+    .container-interests {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .interests-item {
+        flex-grow: 1;
+        width: 30%;
+        height: 240px;
+        position: relative;
+        background-size: cover;
+    }
+```
+### 10. Position (absolute, relative)
+
+#### position: fixed 
+pasek nawigacyjny jest nieruchomy w górnej części strony (pozycja ustalona za pomocą right, left, top);
+
+```
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--background-light);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    max-width: 100vw;
+}
+```
+#### position: absolute & position: relative
+pasek postępu w sekcji Skills
+```
+.progress {
+    width: 100%;
+    min-width: 48px;
+    height: 24px;
+    background-color: lightgray;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.progress-value {
+    background-color: green;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+```
+
+### 11. Animacje keyframes
+
+#### za pomocą animacji wykonanie okrągłego elementu, który zmienia swoją pozycję, widoczność oraz wielkość i działa w kółko
+
+```
+.ball {
+    background-color: var(--font);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.left-ball {
+    left: 40%;
+    animation: left-ball-move 5s linear 0s infinite;
+}
+
+.right-ball {
+    left: 60%;
+    animation: right-ball-move 5s linear 0s infinite;
+}
+
+@keyframes left-ball-move {
+    0% {left: 40%; opacity: 1;}
+    25% {left: 50%; opacity: 0.4; transform: scale(1.5);}
+    50% {left: 60%; opacity: 1;}
+    75% {left: 50%; opacity: 0.4; transform: scale(1.5);}
+    100% {left: 40%; opacity: 1;}
+}
+
+@keyframes right-ball-move {
+    0% {left: 60%; opacity: 1;}
+    25% {left: 50%; opacity: 0.4; transform:scale(1.5);}
+    50% {left: 40%; opacity: 1;}
+    75% {left: 50%; opacity: 0.4; transform:scale(1.5);}
+    100% {left: 60%; opacity: 1;}
+}
+```
+### 12. Formularz (bez wysyłania)
+
+```html
+<p class="contact-title"> FORMULARZ</p>
+    <form action="/my_page" method="post">
+        <div> 
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="user_name">
+        </div>
+        <div>
+            <label for="contact-mail">E-mail</label>
+            <input type="email" id="contact-mail" name="user_email">
+        </div>
+        <div> 
+            <label for="contact-message">Text</label>
+            <textarea id="contact-message" name="user_message"></textarea>
+        </div>
+            <button type="submit">Send</button>
+    </form>
+```
+### 13. Responsive Web Design
+#### ustawienia sekcji about-me i css grid 
+```
+@media only screen and (min-width: 768px) {
+    .about-me-container {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "about-me-photo about-me-name about-me-contact"
+            "about-me-photo about-me-info about-me-info"
+    }
+
+    .about-me-photo {
+        border-right: 3px var(--secondary) solid;
+        padding-right: 16px;
+    }
+
+    .about-me-contact {
+        text-align: right;
+    }
+
+    .about-me-name {
+        text-align: left;
+    }
+
+    .about-me-info {
+        text-align: justify;
+    }
+}
+```
