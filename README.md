@@ -109,3 +109,21 @@ Pamiętaj tylko, że Ty korzystasz tutaj jedynie z HTML i CSS.
 Przygotowane projekty interfejsu użytkownika są tutaj po to, żebyś bez problemów postawił swoje pierwsze kroki w praktycznym wykorzystaniu HTML i CSS.
 Jednakże zachęcamy do wykonania czegoś, co ukaże Twoje wnętrze :) 
 Dobrej zabawy!
+
+# CodersCamp 2020 - Projekt HTML & CSS
+=============
+Projekt Wizytówki / Portfolio opracowany wyłącznie na podstawie zagadnień związanych z HTML & CSS, bez użycia JavaScriptu ani żadnego innego frameworka. Nie użyto również gotowych bibliotek styli takich jak Bootstrap.
+
+1. Box Model
+2. Kaskadowość CSS
+3. Selektory CSS
+4. Popularne tagi HTML
+5. Jak podpinać CSSa do HTMLa
+6. Zapisywanie kolorów
+7. Stylowanie tekstu
+8. Zewnętrzne ikony/fonty (fontawesome, google fonts)
+9. Flexbox i/lub CSS Grid
+10. Position (absolute, relative)
+11. Animacje keyframes
+12. Formularz (bez wysyłania)
+
