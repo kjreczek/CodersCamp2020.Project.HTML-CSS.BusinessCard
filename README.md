@@ -20,7 +20,16 @@ footer {
 
 ### 2. Kaskadowość CSS
 
+style inline są ważniejsze niż style zdefiniowane w znaczniku \<style\> w sekcji head, natomiast w znaczniku head są ważniejsze niż te zdefiniowane w pliku css
 
+#### style css o wyższej specyficzności
+```
+ul.no-bullets li a {
+    color: var(--background-light);
+    text-decoration: none; 
+    display: block;
+}
+```
 
 
 ### 3. Selektory CSS
@@ -70,16 +79,8 @@ footer {
 }
 ```
 
-#### TEKST
-```
-ul.no-bullets li a {
-    color: var(--background-light);
-    text-decoration: none; 
-    display: block;
-}
-```
 
-#### TEKST
+#### pseudoklasa
 ```
 ul.no-bullets li:hover {
     background-color: rgba(0, 0, 0, 0.8);
@@ -87,7 +88,7 @@ ul.no-bullets li:hover {
 }
 ```
 
-#### TEKST
+#### 
 ```
 .container-contact-item:first-child {
     min-width: 300px;
@@ -132,7 +133,7 @@ ul.no-bullets li:hover {
 <link rel="stylesheet" href="./static/css/style.css">
 ```
 
-#### Znaczniki <style w sekcji head
+#### Znaczniki \<style\> w sekcji head
 
 ```
 <style>
@@ -268,7 +269,7 @@ ul.no-bullets li a {
 ```
 ### 10. Position (absolute, relative)
 
-#### position: fiex 
+#### position: fixed 
 pasek nawigacyjny jest nieruchomy w górnej części strony (pozycja ustalona za pomocą right, left, top);
 
 ```
@@ -284,7 +285,7 @@ nav {
 }
 ```
 #### position: absolute & position: relative
-pasek postępu w seksji Skills
+pasek postępu w sekcji Skills
 ```
 .progress {
     width: 100%;
@@ -364,7 +365,7 @@ pasek postępu w seksji Skills
     </form>
 ```
 ### 13. Responsive Web Design
-#### ustawienia sekcji about-me i css gridd 
+#### ustawienia sekcji about-me i css grid 
 ```
 @media only screen and (min-width: 768px) {
     .about-me-container {

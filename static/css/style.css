@@ -436,12 +436,14 @@ footer {
     color: var(--font);
     margin: 20px 0px 0px 0px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
     text-align: center;
     border-top: 2px var(--background-light) solid;
 }
 
 table {
-    margin: 10px 300px 10px 300px;
+    margin-top:40px;
     padding: 20px;
     border: 2px solid rgba(59, 58, 58, 0.116);
 }
