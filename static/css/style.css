@@ -1,8 +1,5 @@
 /* globalne */
 :root {
-   --primary: #177E89;
-   --secondary: #084C61;
-   --secondary-a: #084c61de;
    --background: #dfdfdf;
    --background-light: #F8F8F8;
    --font: #323031;
@@ -441,6 +438,12 @@ footer {
     padding: 20px;
     text-align: center;
     border-top: 2px var(--background-light) solid;
+}
+
+table {
+    margin: 10px 300px 10px 300px;
+    padding: 20px;
+    border: 2px solid rgba(59, 58, 58, 0.116);
 }
 
 /* amazing animation section */
