@@ -1,7 +1,21 @@
 # CodersCamp 2020 - Projekt HTML & CSS
+
+## I. O Projekcie
 Projekt Wizytówki / Portfolio opracowany wyłącznie na podstawie zagadnień związanych z HTML & CSS, bez użycia JavaScriptu ani żadnego innego frameworka. Nie użyto również gotowych bibliotek styli takich jak Bootstrap.
 
-### Poniżej przedstawiono przykłady użycia poszczególnych zagadnień HTML & CSS w projekcie.
+## II. Repozytorium 
+W skład repozytorium projektu wchodzą:
+- index.html - plik stanowiący stronę główną projektu;
+- style.css (./static/css) - plik ze stylami strony;
+- folder images (./static) ze zdjęciami wykorzystanymi na stronie - zdjęcia zostały pobrane ze strony www.unsplash.com
+
+## III. Zawartość projektu i wykorzystane technologie
+Strona główna została podzielona na cztery sekcje - About Me, Skills, Interests, Contact Me oraz posiada wydzielony nagłówek oraz stopkę strony. Poszczególne działy zostały podzielone oraz wyrównane za pomocą flexa oraz grida. Elementy oraz zagadnienia zawarte w projekcie zostały dokładnie przedstawione w dziale IV. 
+
+Na stronie użyto google fonts: Barlow oraz Bree Serif, a także Font Awesome. 
+
+## IV. Użyte zagadnienia oraz przykłady
+
 
 ### 1. Box Model
 
