@@ -119,6 +119,7 @@ header .icons i:hover {
     font-size: 30px;
     margin: 16px 0px 8px 20px;
     color: var(--font);
+    font-family: 'Bree Serif', serif;
 }
 
 .section-body {
