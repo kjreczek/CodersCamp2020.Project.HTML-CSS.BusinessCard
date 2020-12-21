@@ -1,7 +1,7 @@
 # CodersCamp 2020 - Projekt HTML & CSS
 
 ## I. O Projekcie
-Projekt Wizytówki / Portfolio opracowany wyłącznie na podstawie zagadnień związanych z HTML & CSS, bez użycia JavaScriptu ani żadnego innego frameworka. Nie użyto również gotowych bibliotek styli takich jak Bootstrap.
+Projekt wizytówki / portfolio opracowany wyłącznie na podstawie zagadnień związanych z HTML & CSS, bez użycia JavaScriptu ani żadnego innego frameworka. Nie użyto również gotowych bibliotek styli takich jak Bootstrap. Projekt tworzony w ramach udziału w CodersCamp 2020. 
 
 ## II. Repozytorium 
 W skład repozytorium projektu wchodzą:
@@ -10,7 +10,7 @@ W skład repozytorium projektu wchodzą:
 - folder images (./static) ze zdjęciami wykorzystanymi na stronie - zdjęcia zostały pobrane ze strony www.unsplash.com
 
 ## III. Zawartość projektu i wykorzystane technologie
-Strona główna została podzielona na cztery sekcje - About Me, Skills, Interests, Contact Me oraz posiada wydzielony nagłówek oraz stopkę strony. Poszczególne działy zostały podzielone oraz wyrównane za pomocą flexa oraz grida. Na stronie znajdują się dwie animację z keyframes, wykorzystano również do zmian elementów właściwości css transform oraz transition. Na stronie znajdują się trzy sposoby podpinania styli do HTMLa, użyto najbardziej popularnych i najważniejszych selektorów w CSS oraz najpopularniejszych tagów w HTML. W projekcie pokazano kilka sposobów zapisania kolorów oraz tła. Całość strony i jej elementów jest responsywna i dopasowana do mniejszych ekranów (768px) - zgodnie z przyjętymi wielkościami w bootstrapie. Szczegółowe przykłady wykorzystania wszystkich zagadnień z HTML & CSS w projekcie zostały opisane i przedstawione w dziale IV.
+Strona główna została podzielona na cztery sekcje - About Me, Skills, Interests, Contact Me oraz posiada wydzielony nagłówek oraz stopkę strony. Poszczególne działy zostały podzielone oraz wyrównane za pomocą flexa oraz grida. Na stronie znajdują się dwie animację z keyframes, wykorzystano również do zmian elementów właściwości css transform oraz transition. Na stronie znajdują się trzy sposoby podpinania styli do HTMLa, użyto najbardziej popularnych i najważniejszych selektorów w CSS oraz najpopularniejszych tagów w HTML. W projekcie pokazano kilka sposobów zapisania kolorów oraz tła. Całość strony i jej elementów jest responsywna i dopasowana do mniejszych ekranów (768px) - zgodnie z przyjętymi wielkościami w bootstrapie. W stylach strony użyto różnych jednostek wyrażających wielkość. Szczegółowe przykłady wykorzystania wszystkich zagadnień z HTML & CSS w projekcie zostały opisane i przedstawione w dziale IV.
 
 Na stronie użyto google fonts: Barlow oraz Bree Serif, a także Font Awesome. 
 
